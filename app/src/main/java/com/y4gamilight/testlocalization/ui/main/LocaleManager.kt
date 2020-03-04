@@ -20,32 +20,34 @@ class LocaleManager {
         prefs = context.getSharedPreferences(keyLocale, Context.MODE_PRIVATE)
     }
 
-    fun setLocale(c: Context): Context {
+    fun setLocale(c: Context?): Context? {
         return updateResources(c, language)
     }
 
-    fun setNewLocale(c: Context, language: String): Context {
+    fun setNewLocale(c: Context, language: String): Context? {
         persistLanguage(language)
         return updateResources(c, language)
     }
-    private fun updateResources(context: Context, language: String): Context {
+    private fun updateResources(context: Context?, language: String): Context? {
         var context = context
         val locale = Locale(language)
         Locale.setDefault(locale)
 
-        val res = context.resources
-        val config = Configuration(res.configuration)
+        context?.resources?.let {res ->
+            val config = Configuration(res.configuration)
 
-        if (Build.VERSION.SDK_INT >= N ) {
-            setLocaleForApi24(config, locale)
-            context = context.createConfigurationContext(config)
-        } else if (Build.VERSION.SDK_INT >= JELLY_BEAN_MR1) {
-            config.setLocale(locale)
-            context = context.createConfigurationContext(config)
-        } else {
-            config.locale = locale
-            res.updateConfiguration(config, res.displayMetrics)
+            if (Build.VERSION.SDK_INT >= N ) {
+                setLocaleForApi24(config, locale)
+                context = context?.createConfigurationContext(config)
+            } else if (Build.VERSION.SDK_INT >= JELLY_BEAN_MR1) {
+                config.setLocale(locale)
+                context = context?.createConfigurationContext(config)
+            } else {
+                config.locale = locale
+                res.updateConfiguration(config, res.displayMetrics)
+            }
         }
+
         return context
     }
 

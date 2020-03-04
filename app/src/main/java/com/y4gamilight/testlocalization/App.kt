@@ -9,7 +9,9 @@ import com.y4gamilight.testlocalization.ui.main.LocaleManager
 open class App: Application() {
     val TAG = "TextLocalization";
 
-    lateinit var localeManager: LocaleManager
+    companion object {
+        public lateinit var localeManager: LocaleManager
+    }
     override fun onCreate() {
         super.onCreate()
     }

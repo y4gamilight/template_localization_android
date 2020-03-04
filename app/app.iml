@@ -25,7 +25,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/Users/admin/Downloads/TestLocalization/app/src/debug/java;/Users/admin/Downloads/TestLocalization/app/src/release/kotlin;/Users/admin/Downloads/TestLocalization/app/src/release/java;/Users/admin/Downloads/TestLocalization/app/src/debugAndroidTest/kotlin;/Users/admin/Downloads/TestLocalization/app/src/debugUnitTest/kotlin;/Users/admin/Downloads/TestLocalization/app/src/releaseUnitTest/kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/debug/kotlin;/Volumes/Data/TrainingProject/template_localization_android/app/src/debug/java;/Volumes/Data/TrainingProject/template_localization_android/app/src/release/kotlin;/Volumes/Data/TrainingProject/template_localization_android/app/src/release/java;/Volumes/Data/TrainingProject/template_localization_android/app/src/debugAndroidTest/kotlin;/Volumes/Data/TrainingProject/template_localization_android/app/src/debugUnitTest/kotlin;/Volumes/Data/TrainingProject/template_localization_android/app/src/releaseUnitTest/kotlin">
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
         </compilerSettings>
