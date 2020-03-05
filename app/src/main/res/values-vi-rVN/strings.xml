@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestLocalization</string>
+    <string name="text_hello_world">Chào thế giới !!!</string>
+    <string name="text_name_language">Tiếng Việt</string>
+</resources>

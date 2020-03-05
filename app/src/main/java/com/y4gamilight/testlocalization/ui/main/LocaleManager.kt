@@ -95,6 +95,7 @@ class LocaleManager {
         val LANGUAGE_ENGLISH = "en"
         val LANGUAGE_UKRAINIAN = "uk"
         val LANGUAGE_RUSSIAN = "ru"
+        val LANGUAGE_VIETNAMESE = "vi"
         private val LANGUAGE_KEY = "language_key"
 
     }
